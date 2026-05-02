@@ -10,8 +10,7 @@ const socialLinks = [
   { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/agungairlangga" },
   { icon: <FaGithub />, href: "https://github.com/agungairlangg635-hue" },
   { icon: <FaDribbble />, href: "#about" },
-  { icon: <SiGmail />, href: "agungairlangg635@gmail.com" },
-];
+  { icon: <SiGmail />, href: "mailto:agungairlangg635@gmail.com" },];
 
 const Hero = () => {
   return (
@@ -57,9 +56,6 @@ const Hero = () => {
 
             {/* Deskripsi */}
             <p className="text-white/60 text-[14px] sm:text-[16px] lg:text-[17px] leading-[1.7] max-w-[500px] mb-8">
-              Passionate about transforming raw data into meaningful insights. 
-              I build scalable data pipelines, design analytics solutions, and 
-              turn complex information into clear stories that drive decisions.
             </p>
 
             {/* CTA Buttons */}
@@ -161,7 +157,25 @@ const Hero = () => {
       </div>
 
       {/* Left vertical socials */}
-      <div className="hidden md:flex absolute left-8 bottom-10 z-[3] flex-col gap-5">
+      {/* Social links - desktop kiri, mobile bawah tengah */}
+      <div
+        className="
+          fixed md:absolute
+          left-1/2 md:left-8
+          bottom-5 md:bottom-10
+          -translate-x-1/2 md:translate-x-0
+          z-[9999]
+          flex flex-row md:flex-col
+          items-center justify-center
+          gap-4 md:gap-5
+          px-5 py-3 md:p-0
+          rounded-full md:rounded-none
+          border border-white/10 md:border-0
+          bg-[#050816]/80 md:bg-transparent
+          backdrop-blur-md md:backdrop-blur-0
+          shadow-[0_0_25px_rgba(145,94,255,0.3)] md:shadow-none
+        "
+      >
         {socialLinks.map((item, index) => (
           <motion.a
             key={index}
@@ -171,7 +185,18 @@ const Hero = () => {
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 + index * 0.1, duration: 0.4 }}
-            className="text-white/70 text-[20px] hover:text-[#915EFF] hover:scale-110 transition-all duration-300"
+            className="
+              flex items-center justify-center
+              w-10 h-10
+              rounded-full
+              text-white/80 text-[20px]
+              bg-white/5 md:bg-transparent
+              border border-white/10 md:border-0
+              hover:text-white
+              hover:bg-[#915EFF]
+              hover:scale-110
+              transition-all duration-300
+            "
           >
             {item.icon}
           </motion.a>
