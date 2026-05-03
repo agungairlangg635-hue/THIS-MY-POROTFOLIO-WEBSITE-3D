@@ -1,6 +1,7 @@
 # My 3D Developer Portfolio
 
-![Portfolio Screenshot](portofolio1.jpg) <!-- Replace with actual screenshot -->
+![Portfolio Screenshot](<img width="1334" height="825" alt="Screenshot 2026-05-03 182831" src="https://github.com/user-attachments/assets/2813d93c-29f4-4c4d-b2d8-5839e29f04fa" />
+) <!-- Replace with actual screenshot -->
 
 Welcome to my personal portfolio website! This project is a showcase of my skills and creativity as a developer, featuring an interactive, 3D-enhanced experience. Built with modern web technologies, it combines immersive 3D graphics, smooth animations, and a responsive design that works seamlessly across all devices. Explore my journey, projects, and skills - I hope you enjoy the ride!
 
